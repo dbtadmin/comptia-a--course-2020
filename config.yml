@@ -1,0 +1,19 @@
+title: Comptia A+ Course 2020
+tagline: A brand new course on Learning Lab
+description: >-
+  In this course, you will the basic of scripting, programming and the basics of
+  becoming a Sys Admin
+template:
+  repo: comptia-a+-course-2020-template
+  name: comptia-a+-course-2020
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
